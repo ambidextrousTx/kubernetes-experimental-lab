@@ -1,15 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: null
   labels:
     run: nginx-udemy
-  name: nginx-udemy
+    type: iac
+  name: nginx-udemy-yaml
 spec:
   containers:
   - image: nginx
-    name: nginx-udemy
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
+    name: nginx-udemy-yaml
